@@ -3,7 +3,7 @@
 </p>
 
 <div align="center">
-<h2>Famba-V: Fast Vision Mamba with Cross-Layer Token Fusion</h2>
+<h1>Famba-V: Fast Vision Mamba with Cross-Layer Token Fusion</h1>
 
 <div align="center">
 <img src="assets/FambaOverview.png" />
