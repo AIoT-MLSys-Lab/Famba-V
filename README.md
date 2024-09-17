@@ -1,36 +1,32 @@
+<p align="center">
+<img src="assets/logo.jpg" width="30%"> <br>
+</p>
+
 <div align="center">
-<h1>Famba-V</h1>
-<h3>Fast Vision Mamba with Sparse Fusion-based Visual Representation</h3>
+<h2>Famba-V: Fast Vision Mamba with Cross-Layer Token Fusion</h2>
 
-[Hui Shen](https://scholar.google.com/citations?view_op=list_works&hl=en&hl=en&user=iblw0zoAAAAJ), [Zhongwei Wan](https://github.com/LegendBC)<sup>:email:</sup>, [Xin Wang](https://scholar.google.com/citations?user=pCY-bikAAAAJ&hl=zh-CN), [Mi Zhang](https://xwcv.github.io/)<sup>:email:</sup>
-
-The Ohio State University
-
-(<sup>:email:</sup>) corresponding author.
-
-Paper Link ([]())
-
+<div align="center">
+<img src="assets/FambaOverview.png" />
+</div>
 
 </div>
 
-
-#
-
+## Introduction
+  
+> **[SVD-LLM: Singular Value Decomposition for Large Language Model Compression](https://arxiv.org/abs/2403.07378)** [[arXiv]](https://arxiv.org/abs/2403.07378)   
+> *Hui Shen, Zhongwei Wan, Xin Wang, Mi Zhang*   
+> *The Ohio State University*  
 
 ## Abstract
-Visual representation learning has seen significant advancements with the emergence of Transformer-based architectures. However, their quadratic complexity poses efficiency challenges. This work introduces Faster Mamba for Vision (Famba-V), a pioneering approach for feature sparse fusion in State Space Models (SSMs), specifically designed for Vision Mamba (Vim) models. Unlike token pruning techniques, Famba-V leverages cosine similarity between tokens to identify and merge similar information without information loss. Our critical observation is that the most similar tokens in the lower layers of the Vim model are highly structured within several regions, which we call Sparse Groups. This phenomenon indicates that sparse fusion in the lower layers may result in a loss of visual information due to the linear nature of SSM. Extensive experiments on CIFAR-100 datasets demonstrate that Famba-V achieves up to 20\% training time reduction and 26\%-28\% memory usage reduction with different model sizes compared to vanilla Vim with minimal accuracy drop. This work not only introduces the first visual token sparse fusion technique for Vim models but also explores effective strategies for handling the lower layer sparse groups. Our results highlight a promising new direction in SSM compression techniques, offering an alternative to feature pruning methods while maintaining or enhancing performance in image classification tasks.
+Mamba and Vision Mamba (Vim) models have shown their potential as an alternative to methods based on Transformer architecture. This work introduces Fast Mamba for Vision (Famba-V), a cross-layer token fusion technique to enhance the training efficiency of Vim models. The key idea of Famba-V is to identify and fuse similar tokens across different Vim layers based on a suit of cross-layer strategies instead of simply applying token fusion uniformly across all the layers that existing works propose. We evaluate the performance of Famba-V on CIFAR-100. Our results show that Famba-V is able to enhance the training efficiency of Vim models by reducing both training time and peak memory usage during training. Moreover, the proposed cross-layer strategies allow Famba-V to deliver superior accuracy-efficiency trade-offs. These results all together demonstrate Famba-V as a promising efficiency enhancement technique for Vim models.
 
 
 <div align="center">
 <img src="assets/Strategies.png" />
 </div>
 
-## Overview
-<div align="center">
-<img src="assets/FambaOverview.png" />
-</div>
 
-## Envs. for Pretraining
+## Quick Start
 
 - Python 3.10.13
 
@@ -59,5 +55,10 @@ This project is based on Vision Mamba ([paper](https://arxiv.org/abs/2401.09417)
 If you find Famba-V is useful in your research or applications, please consider giving us a star 🌟 and citing it by the following BibTeX entry.
 
 ```bibtex
-
+@inproceedings{fambav2024eccvw,
+    title={Famba-V: Fast Vision Mamba with Sparse Fusion-based Visual Representation},
+    author={Shen, Hui and Wan, Zhongwei and Wang, Xin and Zhang, Mi},
+    booktitle={European Conference on Computer Vision (ECCV) Workshop on Computational Aspects of Deep Learning},
+    year={2024}
+}
 ```
