@@ -5,6 +5,11 @@
 <div align="center">
 <h1>Famba-V: Fast Vision Mamba with Cross-Layer Token Fusion</h1>
 </div>
+<div align="center">
+<a href="https://opensource.org/licenses/Apache-2.0">
+  <img alt="License: Apache 2.0" src="https://img.shields.io/badge/License-Apache%202.0-4E94CE.svg">
+</a>
+</div>
 
 ## Introduction
   
