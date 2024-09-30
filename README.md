@@ -16,7 +16,7 @@
 > **[Famba-V: Fast Vision Mamba with Cross-Layer Token Fusion](https://arxiv.org/abs/2409.09808)** [[arXiv]](https://arxiv.org/abs/2409.09808)   
 > *Hui Shen, Zhongwei Wan, Xin Wang, Mi Zhang*   
 > *The Ohio State University*
-> *ECCV 2024 Workshop on Computational Aspects of Deep Learning (Best Paper Award Candidate)*
+> *ECCV 2024 Workshop on Computational Aspects of Deep Learning (Best Paper Award)*
 
 ## Abstract
 Mamba and Vision Mamba (Vim) models have shown their potential as an alternative to methods based on Transformer architecture. This work introduces Fast Mamba for Vision (Famba-V), a cross-layer token fusion technique to enhance the training efficiency of Vim models. The key idea of Famba-V is to identify and fuse similar tokens across different Vim layers based on a suit of cross-layer strategies instead of simply applying token fusion uniformly across all the layers that existing works propose. We evaluate the performance of Famba-V on CIFAR-100. Our results show that Famba-V is able to enhance the training efficiency of Vim models by reducing both training time and peak memory usage during training. Moreover, the proposed cross-layer strategies allow Famba-V to deliver superior accuracy-efficiency trade-offs. These results all together demonstrate Famba-V as a promising efficiency enhancement technique for Vim models.
