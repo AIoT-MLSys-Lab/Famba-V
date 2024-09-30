@@ -15,7 +15,7 @@
   
 > **[Famba-V: Fast Vision Mamba with Cross-Layer Token Fusion](https://arxiv.org/abs/2409.09808)** [[arXiv]](https://arxiv.org/abs/2409.09808)   
 > *Hui Shen, Zhongwei Wan, Xin Wang, Mi Zhang*   
-> *The Ohio State University*
+> *The Ohio State University*  
 > *ECCV 2024 Workshop on Computational Aspects of Deep Learning (Best Paper Award)*
 
 ## Abstract
